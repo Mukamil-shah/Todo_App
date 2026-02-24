@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Todo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="app-card">
+      <div class="header">
+        <h1>Todo App</h1>
+        <p class="muted">Simple and delightful</p>
+      </div>
+
+      <form class="add-form" onsubmit="return false;">
+        <input type="text" id="taskInput" placeholder="Add a task...">
+        <button class="btn" id="addBtn">Add</button>
+      </form>
+
+      <div class="filter-bar" role="tablist">
+        <button class="filter-btn active" data-filter="all">All <span class="count-badge">0</span></button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="theme-toggle" id="toggleTheme" title="Toggle theme">🌙</button>
+      </div>
+
+      <ul class="todo-list" id="taskList"></ul>
+
+      <div class="empty center" id="emptyMessage" aria-live="polite">
+        <div class="empty-illustration"><span class="dot"></span></div>
+        <div>No tasks yet — add your first one!</div>
+      </div>
+
+      <div class="footer">
+        <div class="muted">Drag to reorder • Double-click to edit</div>
+        <button class="clear-btn" id="clearCompleted">Clear completed</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
