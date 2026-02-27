@@ -7,8 +7,8 @@ This app allows users to add, delete, and manage daily tasks easily.
 
 ## 🚀 Live Demo
 
-🔗 syedtodoapp.netlify.app
-(Add your live link here if deployed on Vercel / Netlify / GitHub Pages)
+🔗 https://syedtodoapp.netlify.app/
+
 
 ---
 
